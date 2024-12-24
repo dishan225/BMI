@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#000000">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/bmiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Weight input -->
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter weight (kg)"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Height input -->
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter height (m)"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:background="@android:drawable/edit_text"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Calculate button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@color/design_default_color_primary"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Result text -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
